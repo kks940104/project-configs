@@ -23,3 +23,19 @@ logging:
   level:
     org.hibernate.type: trace
     org.hibernate.orm.jdbc.bind: trace
+
+# Swagger API 설정
+springdoc:
+  version: '1.0.0'
+  api-docs:
+    path: /api-docs
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
+  swagger-ui:
+    operations-sorter: alpha
+    tags-sorter: alpha
+    path: /apidocs.html
+    disable-swagger-default-url: true
+    doc-expansion: none
+  paths-to-match:
+    - /**
