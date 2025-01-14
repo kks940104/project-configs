@@ -46,22 +46,6 @@ cors:
     - https://pintech.koreait.xyz
     - https://localhost:3000 # next.js는 port를 3000번으로 할 거 같음.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 프론트 엔드 도메인
+front:
+  domain: https://pintech.koreait.xyz,http://localhost:3000
