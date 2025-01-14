@@ -43,6 +43,25 @@ springdoc:
 # cors 설정
 cors:
   allowed:
-    - https://koreait.xyz
-    - https://localhost:3000
-    - https://board-service.koreait.xyz
+    - https://pintech.koreait.xyz
+    - https://localhost:3000 # next.js는 port를 3000번으로 할 거 같음.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
