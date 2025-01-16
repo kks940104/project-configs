@@ -26,6 +26,12 @@ spring:
             - Path=/api/v1/member/** # 이쪽으로 api 요청 보내면 될거같음....
           filters:
             - RewritePath=/api/v1/member/?(?<path>.*),/$\{path}
+        - id: pokemon-service # 나중에 지워도 됨
+          uri: lb://pokemon-service
+          predicates:
+            - Path=/api/v1/pokemon/** # 이쪽으로 api 요청 보내면 될거같음....
+          filters:
+            - RewritePath=/api/v1/pokemon/?(?<path>.*),/$\{path}
 
 #유레카 설정
 eureka:
