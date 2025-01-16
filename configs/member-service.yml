@@ -47,3 +47,37 @@ cors:
 # 프론트 엔드 도메인
 front:
   domain: https://pintech.koreait.xyz,http://localhost:3000
+
+# 유레카 설정
+eureka:
+  instance:
+    hostname: ${hostname} # hostname은 변경될 수 있기에 환경변수로
+  client:
+    registerWithEureka: ture # 유레카서버가 발견할 수 있게 만들어주는 설정
+    fetchRegistry: true # 서버 내에서 등록할 수 있게.
+    serviceUrl:  # 주소 설정
+      defaultZone: ${eureka.server}/eureka/ # 주소도 변경될 수 있으니 환경변수로.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
