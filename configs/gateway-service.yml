@@ -23,7 +23,7 @@ spring:
         - id: member-service
           uri: lb://member-service
           predicates:
-            - Path=/api/v1/member/**
+            - Path=/api/v1/member/** # 이쪽으로 api 요청 보내면 될거같음....
           filters:
             - RewritePath=/api/v1/member/?(?<path>.*),/$\{path}
 
