@@ -66,14 +66,14 @@ springdoc:
     - /api/**
 
 # 유레카 설정 테스트만 하고 지우기. -> 모놀리식 아키텍쳐 방식으로 되어있기 때문..
-eureka:
-  instance:
-    hostname: ${hostname}
-  client:
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: ${eureka.server}/eureka/
+#eureka:
+#  instance:
+#    hostname: ${hostname}
+#  client:
+#    registerWithEureka: true
+#    fetchRegistry: true
+#    serviceUrl:
+#      defaultZone: ${eureka.server}/eureka/
 
 
 
