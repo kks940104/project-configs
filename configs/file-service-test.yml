@@ -12,3 +12,7 @@ spring:
 file:
   upload.path: D:/uploads/
   upload.url: /uploads/
+
+# cors 설정
+cors:
+  allowed: https://pintech.koreait.xyz,https://localhost:3000 # next.js는 port를 3000번으로 할 거 같음.
