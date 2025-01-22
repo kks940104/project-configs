@@ -8,6 +8,11 @@ spring:
     username: ${db.username}
     password: ${db.password}
 
+  data:
+    redis:
+      host: ${redis.host}
+      port: ${redis.port}
+
   # JPA 설정
   jpa:
     properties:

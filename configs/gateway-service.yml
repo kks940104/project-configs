@@ -34,6 +34,13 @@ spring:
           filters:
             - RewritePath=/api/v1/file/?(?<path>.*),/$\{path}
 
+        - id: board-service
+          uri: lb://board-service
+          predicates:
+            - Path=/api/v1/board/** # 이쪽으로 api 요청 보내면 될거같음....
+          filters:
+            - RewritePath=/api/v1/board/?(?<path>.*),/$\{path}
+
 #유레카 설정
 eureka:
   instance:
