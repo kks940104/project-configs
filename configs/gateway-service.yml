@@ -40,6 +40,12 @@ spring:
             - Path=/api/v1/board/** # 이쪽으로 api 요청 보내면 될거같음....
           filters:
             - RewritePath=/api/v1/board/?(?<path>.*),/$\{path}
+        - id: card-service
+          uri: lb://card-service
+          predicates:
+            - Path=/api/v1/card/** # 이쪽으로 api 요청 보내면 될거같음....
+          filters:
+            - RewritePath=/api/v1/card/?(?<path>.*),/$\{path}
 
 #유레카 설정
 eureka:
